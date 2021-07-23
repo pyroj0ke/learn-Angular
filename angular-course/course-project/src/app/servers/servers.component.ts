@@ -36,12 +36,4 @@ export class ServersComponent implements OnInit {
     this.serverName = event.target.value;
   }
 
-  checkInputText(event: any): boolean {
-    return event.target.value === '' ? this.isButtonAble = false: this.isButtonAble = true;
-  }
-
-  onClickButton(event: any) {
-    this.username = '';
-    this.isButtonAble = false;
-  }
 }
