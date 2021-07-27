@@ -12,4 +12,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = "Angular course";
+
+  buttonToggle = false;
+  logArray:string[] = [];
+
+  isButtonClicked() {
+    this.buttonToggle = !this.buttonToggle;
+    this.logArray.push('button clicked');
+  }
 }
